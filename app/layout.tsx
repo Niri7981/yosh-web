@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Yosh — Economic permission for autonomous agents",
+  title: "Yosh — API payments in Codex, within your limits",
   description:
-    "Give agents bounded spending authority without unrestricted wallet control. Yosh checks authority before payment. Local macOS, Codex through MCP, and Solana Mainnet native USDC.",
+    "Use Yosh in Codex to buy APIs within your limits. Local wallet custody, Spend Grants, x402 and MPP Solana Charge. Plugin preview for Apple Silicon macOS.",
 };
 
 export const viewport: Viewport = {

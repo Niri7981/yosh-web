@@ -762,3 +762,35 @@ html[lang="zh-CN"] .system-endpoint { letter-spacing: 0; }
 .purchase-flow-actions span { font-size: 12px; color: var(--text-muted); }
 @media (max-width: 1050px) { .purchase-flow-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 700px) { .purchase-flow-section { padding-top: 56px; } .purchase-flow-steps { grid-template-columns: 1fr; gap: 24px; } .purchase-flow-intro { margin: 24px 0 32px; } }
+
+/* Plugin edition keeps the site's quiet editorial layout. */
+.plugin-eyebrow { position: absolute; top: 12%; left: 19%; margin: 0; color: var(--signal); font-family: var(--font-mono); font-size: 10px; letter-spacing: .12em; }
+.plugin-install-section { padding-top: 90px; scroll-margin-top: 32px; }
+.plugin-install-grid { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(36px, 6vw, 90px); margin-top: 32px; }
+.plugin-version { margin: 28px 0 20px; color: var(--text-secondary); font: 11px/1.7 var(--font-mono); }
+.plugin-checksum { display: block; width: fit-content; margin-top: 18px; font-size: 12px; }
+.plugin-install-card { min-width: 0; border: 1px solid var(--rule-strong); background: var(--surface); }
+.plugin-install-tabs { display: flex; border-bottom: 1px solid var(--rule-strong); }
+.plugin-install-tabs button { flex: 1; min-height: 52px; border: 0; border-bottom: 2px solid transparent; color: var(--text-secondary); background: transparent; font: 13px var(--font-sans); cursor: pointer; }
+.plugin-install-tabs button[aria-pressed="true"] { border-bottom-color: var(--signal); color: var(--text-primary); background: var(--surface-raised); }
+.plugin-install-content { padding: 28px; }
+.plugin-method-note { margin: 0 0 22px; color: var(--text-secondary); font-size: 13px; line-height: 1.7; }
+.plugin-agent-prompt { margin: 0; font-size: 17px; color: var(--text-body); line-height: 1.65; }
+.plugin-copy-button { display: flex; justify-content: space-between; gap: 16px; align-items: center; width: 100%; margin-top: 24px; padding: 15px 17px; border: 1px solid var(--rule-strong); background: transparent; color: var(--text-primary); text-align: left; font: 13px var(--font-sans); cursor: pointer; }
+.plugin-copy-button:hover { background: var(--surface-raised); border-color: var(--signal); }
+.plugin-install-card button:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
+.plugin-copy-status { min-height: 18px; margin: 10px 0 0; color: var(--signal); font-size: 12px; }
+.plugin-code { margin: 0; padding: 16px; background: var(--bg); overflow-wrap: anywhere; white-space: pre-wrap; font: 12px/1.8 var(--font-mono); }
+.plugin-next { border-top: 1px solid var(--rule); margin-top: 12px; padding-top: 24px; }
+.plugin-next h3, .plugin-install-boundary h3 { font-size: 14px; font-weight: 500; margin: 0 0 10px; }
+.plugin-next > p { color: var(--text-secondary); font-size: 13px; line-height: 1.7; }
+.plugin-message-label { display: block; margin-top: 22px; color: var(--text-muted); font: 10px var(--font-mono); letter-spacing: .08em; }
+.plugin-next .plugin-first-message { border-left: 1px solid var(--signal-soft); padding-left: 14px; color: var(--text-body); }
+.plugin-install-boundary { margin-top: 42px; border-top: 1px solid var(--rule-strong); padding-top: 24px; max-width: 850px; }
+.plugin-install-boundary p { color: var(--text-secondary); font-size: 13px; line-height: 1.8; }
+.plugin-legacy { margin-top: 28px; color: var(--text-muted); font-size: 12px; line-height: 1.7; }
+.plugin-legacy a { color: var(--text-secondary); text-underline-offset: 4px; }
+.plugin-legacy p { margin: 4px 0 0; }
+.plugin-copy-fallback { width: 100%; min-height: 180px; margin-top: 12px; background: var(--bg); color: var(--text-body); border: 1px solid var(--rule-strong); padding: 12px; font: 12px/1.6 var(--font-mono); }
+@media (max-width: 1050px) { .plugin-install-grid { gap: 32px; } .plugin-install-content { padding: 22px; } .intro-download-meta { grid-template-columns: 1fr; gap: 4px; } .intro-download-meta span + span { border: 0; padding: 0; } }
+@media (max-width: 700px) { .plugin-eyebrow { left: 14%; top: 13%; font-size: 9px; } .plugin-install-grid { grid-template-columns: 1fr; } .plugin-install-section { padding-top: 64px; } .plugin-install-content { padding: 20px; } }

@@ -7,6 +7,7 @@ export default function HeroContents() {
 
   return (
     <>
+      <p className="plugin-eyebrow">CODEX PLUGIN · x402 + MPP</p>
       <h1 className="permission-heading" lang={locale === "zh" ? "zh-CN" : "en"}>
         {t.hero.statement.map((line) => <span key={line}>{line}</span>)}
       </h1>

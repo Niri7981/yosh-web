@@ -8,7 +8,7 @@ export default function SiteNavigation() {
   const navigation = [
     { href: "#product", label: t.nav.product },
     { href: "#how-it-works", label: t.nav.howItWorks },
-    { href: "/prototype/index.html", label: locale === "zh" ? "试用原型" : "Try prototype", prototype: true },
+    { href: "#get-started", label: locale === "zh" ? "安装插件" : "Install plugin", prototype: true },
     { href: "#docs", label: t.nav.docs },
   ];
   return (

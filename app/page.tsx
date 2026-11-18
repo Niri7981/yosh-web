@@ -18,8 +18,8 @@ import DocsSection from "@/components/DocsSection";
 import RoadmapSection from "@/components/RoadmapSection";
 import FAQPreviewSection from "@/components/FAQPreviewSection";
 import { LanguageProvider, useLanguage } from "@/components/LanguageProvider";
-import { sourceLinks } from "@/lib/links";
-import DirectDownloadBar from "@/components/DirectDownloadBar";
+
+
 
 export default function Home() {
   return <LanguageProvider><HomeContent /></LanguageProvider>;
@@ -39,7 +39,7 @@ function HomeContent() {
 
             <div className="intro-copy" id="concept">
               <div className="intro-download">
-                <a className="intro-download-button" href={sourceLinks.download}><span aria-hidden="true">↓</span>{t.getStarted.downloadLabel}</a>
+                <a className="intro-download-button" href="#get-started"><span aria-hidden="true">↓</span>{t.getStarted.downloadLabel}</a>
                 <div className="intro-download-meta">
                   <span>{t.getStarted.downloadVersion}</span>
                   <span>{t.getStarted.downloadPlatform}</span>
@@ -50,18 +50,18 @@ function HomeContent() {
                 <p>{t.hero.bodySecondary}</p>
                 <p>{t.hero.bodyPrimary}</p>
               </div>
-              <DirectDownloadBar />
+
             </div>
           </div>
           <PermissionSpirit />
         </section>
         <div className="continuation-sheet">
+          <GetStartedSection />
           <PurchaseFlowSection />
           <AuthoritySection />
           <BoundedAuthoritySection />
           <MembersSection />
           <ControlSection />
-          <GetStartedSection />
           <SecuritySection />
           <ActivitySection />
           <PermissionLayerSection />
